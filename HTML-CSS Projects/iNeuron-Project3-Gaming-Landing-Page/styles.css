@@ -14,9 +14,14 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+nav {
+  flex-grow: 1;
+}
+.logo {
+  margin-right: 50px;
+}
 ul {
   display: flex;
-  justify-content: space-between;
 }
 ul > li {
   display: inline-block;
