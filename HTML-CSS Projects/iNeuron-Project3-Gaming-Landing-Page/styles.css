@@ -9,9 +9,10 @@ body,
 header {
   display: flex;
   width: auto;
-  background: blue;
+  border: solid blue;
   padding: 20px 6%;
   justify-content: space-between;
+  align-items: center;
 }
 ul {
   display: flex;
