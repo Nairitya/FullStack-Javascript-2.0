@@ -6,23 +6,61 @@ body,
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 1440px;
+}
+:root {
+  --primary-orange: #f4694c;
+  --dark-gray: #000308;
+  --light-gray: #77787c;
+}
+
+/* NAVIGATION BAR */
 header {
   display: flex;
-  width: auto;
-  border: solid blue;
+  flex-wrap: wrap;
+  width: 100%;
   padding: 20px 6%;
   justify-content: space-between;
   align-items: center;
+  position: absolute;
+  top: 0;
+  color: #fff;
 }
 nav {
   flex-grow: 1;
+  flex-shrink: 1;
 }
 .logo {
-  margin-right: 50px;
+  margin-right: 100px;
 }
 ul {
   display: flex;
+  flex-wrap: wrap;
 }
 ul > li {
   display: inline-block;
+  margin-right: 50px;
+}
+.nav-buttons > button {
+  padding: 15px 40px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+#cta-button {
+  background-color: var(--primary-orange);
+}
+
+/*HERO SECTION*/
+.hero-section {
+  width: 100vw;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-image: url(Assets/Photos/futuristic-bg.png);
 }
