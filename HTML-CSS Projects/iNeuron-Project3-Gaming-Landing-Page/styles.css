@@ -9,19 +9,22 @@ body,
 body {
   font-family: "Poppins", sans-serif;
   max-width: 1440px;
+  position: relative;
 }
 :root {
   --primary-orange: #f4694c;
   --dark-gray: #000308;
   --light-gray: #77787c;
 }
-
+.bgless {
+  background-color: transparent;
+}
 /* NAVIGATION BAR */
 header {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 20px 6%;
+  padding: 20px 10%;
   justify-content: space-between;
   align-items: center;
   position: absolute;
@@ -43,24 +46,94 @@ ul > li {
   display: inline-block;
   margin-right: 50px;
 }
-.nav-buttons > button {
+button {
   padding: 15px 40px;
   font-weight: 600;
   font-size: 0.9rem;
   margin: 0;
   border: none;
-  background-color: transparent;
+
   color: #fff;
 }
 
-#cta-button {
+button.primary {
   background-color: var(--primary-orange);
 }
 
 /*HERO SECTION*/
 .hero-section {
   width: 100vw;
-  height: 200px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
   background-repeat: no-repeat;
-  background-image: url(Assets/Photos/futuristic-bg.png);
+  background-image: radial-gradient(transparent 10%, #000308),
+    url(Assets/Photos/futuristic-bg.png);
+  background-size: cover;
+
+  padding: 0px 10% 0;
+  color: #fff;
+}
+.hero-left {
+  width: 60%;
+  max-width: 650px;
+}
+
+.hero-left button {
+  border: 2px solid var(--primary-orange);
+  margin-right: 20px;
+  margin-top: 50px;
+}
+button.outlined {
+  border: 2px solid #fff;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.description-text {
+  font-size: 1.2rem;
+  line-height: 2;
+  color: var(--light-gray);
+  font-weight: 500;
+}
+
+/* Hero Right Section */
+.hero-right {
+  width: 40%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+}
+/*Play button*/
+
+.hero-right > img {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  flex-grow: 1;
+}
+.hero-right-text {
+  display: flex;
+  /* margin-top: 200px; */
+}
+.hero-right-text p {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 0 30px 0 15px;
+}
+.hero-right-text img:nth-of-type(1) {
+  align-self: flex-start;
+  padding-top: 20px;
+  width: 60px;
+}
+.hero-right-text img:nth-of-type(2) {
+  align-self: flex-end;
+  width: 100px;
 }
