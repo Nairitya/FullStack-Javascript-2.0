@@ -8,8 +8,9 @@ body,
 }
 body {
   font-family: "Poppins", sans-serif;
-  max-width: 1440px;
+  overflow-x: hidden;
   position: relative;
+  width: 100vw;
 }
 :root {
   --primary-orange: #f4694c;
@@ -23,7 +24,7 @@ body {
 header {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
   padding: 20px 10%;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +64,7 @@ button.primary {
 /*HERO SECTION*/
 .hero-section {
   width: 100vw;
-  height: 100vh;
+  min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -136,4 +137,80 @@ h1 {
 .hero-right-text img:nth-of-type(2) {
   align-self: flex-end;
   width: 100px;
+}
+
+/*POPULAR GAMES SECTION*/
+.popular-section {
+  padding: 10rem 10%;
+  text-align: center;
+}
+h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.games-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.game-card {
+  min-height: 350px;
+  width: 340px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -250px;
+  display: flex;
+  align-items: flex-end;
+}
+.card1 {
+  background-image: url(./Assets/Photos/image\ 1.png);
+}
+.card2 {
+  background-image: url(./Assets/Photos/image\ 2.png);
+  background-position: -180px;
+}
+.card3 {
+  background-image: url(./Assets/Photos/image\ 3.png);
+  background-position: -120px;
+}
+.card4 {
+  background-image: url(./Assets/Photos/image\ 4.png);
+}
+.game-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  gap: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.game-detail {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 5px;
+}
+.game-detail > h3 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.genre {
+  color: var(--light-gray);
+  font-size: 0.9rem;
+}
+.download-button {
+  padding: 15px 20px;
+  background-color: var(--primary-orange);
+  transition: all 0.1s;
+}
+.download-button:hover {
+  outline: #f4694c 2px solid;
+  background-color: transparent;
+  cursor: pointer;
 }
