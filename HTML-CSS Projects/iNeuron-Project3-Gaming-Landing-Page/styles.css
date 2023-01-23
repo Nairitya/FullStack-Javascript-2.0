@@ -21,15 +21,19 @@ body {
   background-color: transparent;
 }
 /* NAVIGATION BAR */
-header {
+main {
+  background-repeat: no-repeat;
+  background-image: radial-gradient(transparent 10%, #000308),
+    url(Assets/Photos/futuristic-bg.png);
+  background-size: cover;
+}
+.navbar {
   display: flex;
   flex-wrap: wrap;
   width: 100vw;
   padding: 20px 10%;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
-  top: 0;
   color: #fff;
 }
 nav {
@@ -62,6 +66,7 @@ button.primary {
 }
 
 /*HERO SECTION*/
+
 .hero-section {
   width: 100vw;
   min-height: 90vh;
@@ -69,17 +74,13 @@ button.primary {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-repeat: no-repeat;
-  background-image: radial-gradient(transparent 10%, #000308),
-    url(Assets/Photos/futuristic-bg.png);
-  background-size: cover;
 
   padding: 0px 10% 0;
   color: #fff;
 }
 .hero-left {
-  width: 60%;
-  max-width: 650px;
+  /* width: 60%;
+  max-width: 650px; */
 }
 
 .hero-left button {
@@ -106,8 +107,8 @@ h1 {
 
 /* Hero Right Section */
 .hero-right {
-  width: 40%;
-  max-width: 600px;
+  /* width: 40%;
+  max-width: 600px; */
   display: flex;
   flex-direction: column;
   min-height: 500px;
