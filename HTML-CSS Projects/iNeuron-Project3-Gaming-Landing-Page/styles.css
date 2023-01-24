@@ -12,10 +12,17 @@ body {
   position: relative;
   width: 100vw;
 }
+section {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ------------Variables------------ */
 :root {
   --primary-orange: #f4694c;
   --dark-gray: #000308;
   --light-gray: #77787c;
+  --light-red: #fde1db;
 }
 .bgless {
   background-color: transparent;
@@ -73,13 +80,11 @@ button.primary {
 
 .hero-section {
   /* width: 100vw; */
-  max-width: 1440px;
   min-height: 90vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
   /* padding: 0px 10% 0; */
   color: #fff;
 }
@@ -274,4 +279,22 @@ button.learn-more {
     padding-left: 5%;
     padding-right: 5%;
   }
+}
+
+/* ------------RECOMMENDED SECTION------------ */
+.recommended-section {
+}
+
+.title-and-button {
+  display: flex;
+  justify-content: space-between;
+}
+.recommended-buttons button {
+  padding: 1.4rem 1rem;
+}
+.recommended-buttons:nth-child(1) {
+}
+
+.right-arrow {
+  width: 1.6rem;
 }
