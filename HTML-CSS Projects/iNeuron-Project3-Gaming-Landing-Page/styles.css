@@ -375,10 +375,32 @@ button.learn-more {
   background-color: var(--dark-gray);
   color: #fff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 .most-played-section > * {
   max-width: 1440px;
   margin: 0 auto;
+}
+.most-played-section > h2 {
+  padding: 100px 0;
+}
+.most-played-para {
+  width: 100%;
+  display: flex;
+  text-align: left;
+  justify-content: flex-end;
+}
+.most-played-para > p {
+  max-width: 600px;
+}
+.games-of-the-world {
+  margin: unset;
+  align-self: flex-end;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
 }
 .most-played-img-container {
   display: flex;
@@ -386,6 +408,8 @@ button.learn-more {
   justify-content: center;
   align-items: center;
   gap: 4rem;
+  z-index: 2;
+  margin-bottom: 100px;
 }
 .most-played-img-container > img {
 }
