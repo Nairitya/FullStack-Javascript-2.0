@@ -493,6 +493,8 @@ button.learn-more {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem 0;
 }
 .footer-container > div {
   display: flex;
@@ -546,6 +548,19 @@ button.learn-more {
 @media screen and (max-width: 1300px) {
   .recommended-cards-container {
     justify-content: center;
+  }
+  .most-played-para > p {
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 980px) {
+  .most-played-img-container > img:nth-child(1) {
+    top: 0;
+  }
+  .most-played-para {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 880px) {
