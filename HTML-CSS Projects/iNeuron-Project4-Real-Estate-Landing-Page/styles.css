@@ -1,0 +1,48 @@
+body,
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+:root {
+  --primary-color: #6663e9;
+  --secondary-color: #27292e;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+}
+.h-whitespace {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+main {
+  background: url(./Photos/mainBackground.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  color: #fff;
+  padding: 0 8%;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 5%;
+  font-size: 1.2rem;
+}
+
+nav > ul {
+  display: flex;
+  gap: 2rem;
+}
