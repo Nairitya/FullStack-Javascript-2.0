@@ -16,6 +16,7 @@ body,
 body {
   max-width: 1440px;
   margin: 0 auto;
+  color: var(--secondary-color);
 }
 ul {
   list-style: none;
@@ -23,19 +24,30 @@ ul {
 h1 {
   font-size: 4rem;
 }
+h2 {
+  font-size: 3rem;
+}
 button {
   background-color: var(--primary-color);
   color: white;
   border: none;
-  padding: 1.2rem 3rem;
   border-radius: 999px;
   width: max-content;
   font-size: 1.2rem;
   font-weight: bolder;
+  cursor: pointer;
+}
+.btn-large {
+  padding: 1.2rem 3rem;
 }
 .h-whitespace {
   padding-left: 50px;
   padding-right: 50px;
+}
+main,
+section,
+footer {
+  padding: 0 8%;
 }
 main {
   background: url(./Photos/mainBackground.png);
@@ -43,7 +55,7 @@ main {
   background-size: cover;
   /* min-height: 90vh; */
   color: #fff;
-  padding: 0 8%;
+
   position: relative;
 }
 
@@ -97,6 +109,139 @@ nav > ul {
 .multi-logo-container > img {
   width: 15%;
 }
+
+/* -------BEST ESTATE SECTION --------------------------------------------------------- */
+
+.best-estate-section {
+  padding: 18% 8% 10%;
+  text-align: center;
+}
+.best-estate-section > h2 {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.best-estate-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem 2rem;
+  min-height: 475px;
+  margin: 3rem 0 5rem;
+}
+.card {
+  min-height: 400px;
+  max-height: 400px;
+  min-width: 360px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0px 40px 20px -10px rgba(196, 200, 209, 0.3);
+}
+.card.one {
+  background: no-repeat center / cover url(./Photos/cardImage1.png);
+}
+.card.two {
+  background: no-repeat center / cover url(./Photos/cardImage2.png);
+  align-self: center;
+}
+.card.three {
+  background: no-repeat center / cover url(./Photos/cardImage3.png);
+  align-self: flex-end;
+}
+.card.four {
+  background: no-repeat center / cover url(./Photos/cardImage1.png);
+  align-self: flex-end;
+}
+.card.five {
+  background: no-repeat center / cover url(./Photos/cardImage2.png);
+  align-self: center;
+}
+.card.six {
+  background: no-repeat center / cover url(./Photos/cardImage3.png);
+}
+.card.seven {
+  background: no-repeat center / cover url(./Photos/cardImage1.png);
+}
+.card.eight {
+  background: no-repeat center / cover url(./Photos/cardImage2.png);
+  align-self: center;
+}
+.card.nine {
+  background: no-repeat center / cover url(./Photos/cardImage3.png);
+  align-self: flex-end;
+}
+.card-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 20px;
+  width: 90%;
+  bottom: -15%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding: 1.8rem 0;
+  box-shadow: 0px 20px 20px 0px rgba(196, 200, 209, 0.3);
+  transition: all 0.5s;
+}
+.card:hover {
+  animation-name: card;
+  animation-duration: 0.6s;
+  cursor: pointer;
+}
+@keyframes card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.card-bottom-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem 0;
+  text-align: left;
+}
+.card-bottom-left > h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+.price {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+}
+.card-bottom-right {
+  height: min-content;
+}
+.card-bottom-right > button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  position: relative;
+}
+/* .card-bottom-right > button::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-radius: 999px;
+  top: 0;
+  left: 0;
+  background-color: rgb(161, 26, 26);
+  transition: all 0.5s;
+}
+.card-bottom-right > button:hover::before {
+  width: 100%;
+} */
+/* -------MEDIA QUERIES--------------------------------------------------------- */
+
 @media screen and (max-width: 900px) {
   .h-whitespace {
     padding-left: 0;
