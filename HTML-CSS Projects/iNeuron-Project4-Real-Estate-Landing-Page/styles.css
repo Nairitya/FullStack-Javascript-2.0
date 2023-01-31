@@ -240,6 +240,20 @@ nav > ul {
 .card-bottom-right > button:hover::before {
   width: 100%;
 } */
+
+/* -------EARLY BIRD SECTION--------------------------------------------------------- */
+.feature-img-container {
+  position: relative;
+  width: 800px;
+  height: 500px;
+}
+.feature-img-container > img {
+  position: absolute;
+  object-fit: cover;
+  max-width: 300px;
+  height: 300px;
+  border-radius: 25px;
+}
 /* -------MEDIA QUERIES--------------------------------------------------------- */
 
 @media screen and (max-width: 900px) {
