@@ -242,17 +242,32 @@ nav > ul {
 } */
 
 /* -------EARLY BIRD SECTION--------------------------------------------------------- */
+.early-bird {
+  display: flex;
+  max-width: 70vw;
+}
 .feature-img-container {
   position: relative;
-  width: 800px;
-  height: 500px;
+  max-width: 600px;
+  height: 570px;
 }
 .feature-img-container > img {
   position: absolute;
   object-fit: cover;
-  max-width: 300px;
-  height: 300px;
-  border-radius: 25px;
+}
+.feature-img-container > img:nth-child(1) {
+  width: 100%;
+  bottom: 0;
+}
+.feature-img-container > img:nth-child(2) {
+  border-radius: 50px;
+  width: 440px;
+  height: 440px;
+  top: 0;
+  right: 50px;
+}
+.feature-img-container > img.right-aligned {
+  left: 50px;
 }
 /* -------MEDIA QUERIES--------------------------------------------------------- */
 
